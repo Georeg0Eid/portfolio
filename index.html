@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Eid</title>
+    <link rel="shortcut icon" href="images/Icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- -----------NavBar--------- -->
+    <header>
+      <a href="#main-sec" class="logo">Portfolio</a>
+      <nav class="sidebar">
+        <ul>
+          <li  onclick=hideSideBar()><a><i id="close" class="fa-solid fa-x"></i></a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav>
+      <nav class="navigation">
+        <a href="#services" class="hideOnMobile">Services</a>
+        <a href="#projects" class="hideOnMobile">Projects</a>
+        <a href="#contact" class="hideOnMobile">Contact</a>
+        <a class="menu-btn" onclick="showSideBar()" ><i class="fa-solid fa-bars"></i></a>
+      </nav>
+    </header>
+    <!-------------Responsive icons---------------->
+    <script>
+      function showSideBar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+      }
+      function hideSideBar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <!-- ----------Main Section---------- -->
+    <section class="main" id="main-sec">
+      <div class="layer"></div>
+      <div style="z-index: 1;">
+        <h2>
+          Hello I'm <span id="name">George</span> <br />
+          <span>Full-stack Developer</span>
+        </h2>
+        <h3>Where Frontend Finesse Meets Backend Mastery</h3>
+        <a href="#projects" class="main-btn">Explore My Works</a>
+        <div class="social-icons">
+          <a
+          href="https://www.facebook.com/profile.php?id=100006184213505"
+          target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/george_eid10/" target="_blank">
+              <i class="fa-brands fa-square-instagram"> </i
+                ></a>
+              <a
+              href="https://www.linkedin.com/in/george-eid-97545b247/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Georeg0Eid" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+                  ></a>
+                </div>
+              </div>
+            </section>
+    <!-- ------------Services------------->
+    <section class="cards" id="services">
+      <h2 class="title">Services</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <div class="info">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="info">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
+          <div class="info">
+            <h3>CV writing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-----------------Projects------------>
+    <section class="projects" id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="content">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/Ill-vent..JPG" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">Health care & Quick rescue</p>
+            <strong class="project-title">
+              <span>Ill-Vent</span>
+              <a href="#projects" class="project-link">More Details </a>
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/HistoryPedia..JPG" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">History e-Library</p>
+            <strong class="project-title">
+              <span>HitroyPedia</span>
+              <a href="#projects" class="project-link">More Details</a>
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/Trivo..JPG" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">Traveling Services & Booking</p>
+            <strong class="project-title">
+              <span
+                ><span style="color: rgb(238, 155, 0); font-size: larger"
+                  >T</span
+                >rivo.</span
+              >
+              <a href="#projects" class="project-link">More Details</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- -------------Contacts------------ -->
+    <section class="cards contact" id="contact">
+      <h2 class="title">Let's Work Together</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p>+20-120-859-1404</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>e-Mail</h3>
+            <p>
+              <a href="mailto:george.eid308@gmailcom" id="mail">
+                george.eid308@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <h2>Be in Touch</h2>
+            <label>Name</label><input type="text" placeholder="ex:Georg Eid" />
+            <label>e-Mail</label
+            ><input type="email" placeholder="ex: example@mail.com" />
+            <label>Whatsapp Numper</label
+            ><input
+              type="tel"
+              maxlength="11"
+              placeholder="ex: +20-0123-456-7890"
+            />
+            <input type="submit" value="Send" class="form-btn" />
+          </form>
+        </div>
+      </div>
+      <hr />
+    </section>
+    <!-- ---------------Footer----------------->
+    <footer class="footer">
+      <p class="footer-title">
+        All Copyrights and Credits @
+        <span>
+          <a href="https://www.linkedin.com/in/george-eid-97545b247/">George Eid</a>
+        </span>
+      </p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100006184213505"
+          target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/george_eid10/" target="_blank">
+          <i class="fa-brands fa-square-instagram"> </i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/george-eid-97545b247/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Georeg0Eid" target="_blank"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
